@@ -1,0 +1,24 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+    <changeSet id="employee-1.0.0" author="Maria" failOnError="true" runAlways="false" runOnChange="true">
+        <comment>
+            Create table 'employee' to store employee information
+        </comment>
+        <createTable tableName="employee" schemaName="public">
+            <column name="emp_id" type="bigint" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true" />
+            </column>
+            <column name="emp_name" type="varchar(15)" />
+            <column name="dep_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint baseColumnNames="dep_id" baseTableName="employee"
+                                 baseTableSchemaName="public" constraintName="fk_dep_id"
+                                 referencedColumnNames="dep_id" referencedTableName="department"
+                                 referencedTableSchemaName="public" />
+    </changeSet>
+</databaseChangeLog>

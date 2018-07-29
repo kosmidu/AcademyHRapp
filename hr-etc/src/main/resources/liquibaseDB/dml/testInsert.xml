@@ -1,0 +1,28 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+    <changeSet id="init-data-product-types" author="afse" failOnError="true" runAlways="false" runOnChange="true">
+               <!--runOnChange="${runonchangeflag}" runInTransaction="true" dbms="${dbms}">-->
+        <insert tableName="department">
+            <column name="dep_id" value="9" />
+            <column name="dept_name" value="afse" />
+        </insert>
+        <insert tableName="employee">
+            <column name="emp_name" value="Kosmi"/>
+            <column name="dep_id" value="9" />
+        </insert>
+
+    </changeSet>
+
+    <!--<changeSet author="liquibase-docs" id="update-example" failOnError="true" runAlways="false" runOnChange="true">-->
+        <!--<update-->
+                <!--schemaName="public"-->
+                <!--tableName="department">-->
+            <!--<column name="dept_name" value="maria" />-->
+            <!--<where>dept_name = 'dddd'</where>-->
+        <!--</update>-->
+    <!--</changeSet>-->
+
+</databaseChangeLog>

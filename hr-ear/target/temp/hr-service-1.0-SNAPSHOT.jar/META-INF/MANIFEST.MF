@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Built-By: maria
+Class-Path: lib/hr-persistence-1.0-SNAPSHOT.jar lib/javax-javaee-api-8
+ .0.jar lib/com.sun.mail-javax.mail-1.6.0.jar lib/javax.activation-act
+ ivation-1.1.jar lib/javax.validation-validation-api-2.0.1.Final.jar l
+ ib/org.hibernate-hibernate-entitymanager-4.2.7.Final.jar lib/org.jbos
+ s.logging-jboss-logging-3.1.0.GA.jar lib/dom4j-dom4j-1.6.1.jar lib/or
+ g.javassist-javassist-3.18.1-GA.jar lib/org.jboss.spec.javax.transact
+ ion-jboss-transaction-api_1.1_spec-1.0.1.Final.jar lib/org.hibernate.
+ javax.persistence-hibernate-jpa-2.0-api-1.0.1.Final.jar lib/org.hiber
+ nate.common-hibernate-commons-annotations-4.0.2.Final.jar lib/org.hib
+ ernate-hibernate-core-4.0.1.Final.jar lib/commons-collections-commons
+ -collections-3.2.1.jar lib/antlr-antlr-2.7.7.jar lib/com.afse-hr-comm
+ on-1.0-SNAPSHOT.jar lib/log4j-log4j-1.2.17.jar
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_181
+

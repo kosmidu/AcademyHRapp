@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.afse</groupId>
+    <artifactId>hr-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>../hr-persistence</module>
+        <module>../hr-etc</module>
+        <module>../hr-rest</module>
+        <module>../hr-dao</module>
+        <module>../hr-service</module>
+        <module>../hr-ear</module>
+        <module>../hr-common</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <!--  encoding-->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!--java version -->
+        <java-version>1.8</java-version>
+
+        <!-- plugin versions -->
+        <ejb-plugin-version>3.0.1</ejb-plugin-version>
+        <war-plugin-version>3.2.2</war-plugin-version>
+        <ear-plugin-version>3.0.1</ear-plugin-version>
+        <compiler-plugin-version>3.7.0</compiler-plugin-version>
+        <liquibase-plugin-version>3.3.2</liquibase-plugin-version>
+        <wildfly-maven-plugin.version>1.0.1.Final</wildfly-maven-plugin.version>
+
+        <!-- dependency versions -->
+        <javaee-api-version>8.0</javaee-api-version>
+        <junit-version>4.11</junit-version>
+        <postgresql-version>9.3-1102-jdbc41</postgresql-version>
+        <log4j-version>1.2.17</log4j-version>
+        <slf4j-version>1.7.5</slf4j-version>
+        <hibernate.core-version>4.0.1.Final</hibernate.core-version>
+        <hibernate-entitymanager-version>4.2.7.Final</hibernate-entitymanager-version>
+        <resteasy-version>3.6.0.Final</resteasy-version>
+        <javax-validation-api-version>2.0.1.Final</javax-validation-api-version>
+
+        <!-- EJB spec version -->
+        <ejb-spec-version>3.0</ejb-spec-version>
+
+        <!-- jar files to classpath manifest-->
+        <extra.class.path.to.manifest>
+            hr-service-1.0-SNAPSHOT.jar
+        </extra.class.path.to.manifest>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>javax</groupId>
+                <artifactId>javaee-api</artifactId>
+                <version>${javaee-api-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${postgresql-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>${javax-validation-api-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j-version}</version>
+            </dependency>
+
+            <!-- TODO to delete it
+            <dependency>-->
+            <!--<groupId>org.hibernate.javax.persistence</groupId>-->
+            <!--<artifactId>hibernate-jpa-2.1-api</artifactId>-->
+            <!--<version>1.0.2.Final</version>-->
+            <!--</dependency>-->
+
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-entitymanager</artifactId>
+                <version>${hibernate-entitymanager-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>${hibernate.core-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-jaxrs</artifactId>
+                <version>${resteasy-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-client</artifactId>
+                <version>${resteasy-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-jaxb-provider</artifactId>
+                <version>${resteasy-version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!-- compiler plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${compiler-plugin-version}</version>
+                    <configuration>
+                        <source>${java-version}</source>
+                        <target>${java-version}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                    </configuration>
+                </plugin>
+                <!-- ear plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-ear-plugin</artifactId>
+                    <version>${ear-plugin-version}</version>
+                </plugin>
+                <!-- ejb plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-ejb-plugin</artifactId>
+                    <version>${ejb-plugin-version}</version>
+                    <configuration>
+                        <ejbVersion>${ejb-spec-version}</ejbVersion>
+                    </configuration>
+                </plugin>
+                <!-- war plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>${war-plugin-version}</version>
+                </plugin>
+                <!-- wildfly plugin -->
+                <plugin>
+                    <groupId>org.wildfly.plugins</groupId>
+                    <artifactId>wildfly-maven-plugin</artifactId>
+                    <version>${wildfly-maven-plugin.version}</version>
+                </plugin>
+                <!-- liquibase plugin -->
+                <plugin>
+                    <groupId>org.liquibase</groupId>
+                    <artifactId>liquibase-maven-plugin</artifactId>
+                    <version>${liquibase-plugin-version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>

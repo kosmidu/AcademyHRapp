@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>hr-parent</artifactId>
+        <groupId>com.afse</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../hr-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>hr-rest</artifactId>
+    <packaging>war</packaging>
+
+    <repositories>
+        <repository>
+            <id>jboss</id>
+            <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jaxrs</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-client</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jaxb-provider</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.afse</groupId>
+            <artifactId>hr-persistence</artifactId>
+            <version>${project.parent.version}</version>
+            <type>jar</type>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.afse</groupId>
+            <artifactId>hr-service</artifactId>
+            <version>${project.parent.version}</version>
+            <type>ejb</type>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.afse</groupId>
+            <artifactId>hr-dao</artifactId>
+            <version>${project.parent.version}</version>
+            <type>ejb</type>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.afse</groupId>
+            <artifactId>hr-common</artifactId>
+            <version>${project.parent.version}</version>
+            <type>jar</type>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <archive>
+                        <manifestEntries>
+                            <Class-Path>${extra.class.path.to.manifest}</Class-Path>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

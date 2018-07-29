@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hr-common" />
+        <module name="hr-dao" />
+        <module name="hr-ear" />
+        <module name="hr-persistence" />
+        <module name="hr-rest" />
+        <module name="hr-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

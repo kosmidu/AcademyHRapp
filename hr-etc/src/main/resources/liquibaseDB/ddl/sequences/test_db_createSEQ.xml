@@ -1,0 +1,16 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+    <changeSet id="create-sequences" author="Maria">
+        <!--runAlways="${runalwaysflag}" runOnChange="${runonchangeflag}" runInTransaction="true"-->
+        <comment>Creating SEQUENCE Tables</comment>
+        <!--<createSequence sequenceName="EMPLOYEE_SEQ" startValue="1" incrementBy="1"/>-->
+        <!--<createSequence sequenceName="DEPARTMENT_SEQ" startValue="1" incrementBy="1"/>-->
+        <!--<createSequence sequenceName="AVAILGROUPIDSEQ" startValue="1" incrementBy="1"/>-->
+        <!--<createSequence sequenceName="BILLERCUR_SEQ" startValue="1" incrementBy="1"/>-->
+    </changeSet>
+
+</databaseChangeLog>
+

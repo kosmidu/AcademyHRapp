@@ -1,0 +1,7 @@
+com/afse/academy/MyException.class
+com/afse/academy/queue/EmailQueueMessageDrivenBean.class
+com/afse/academy/queue/EmailQueueService.class
+com/afse/academy/queue/AbstractQueueService.class
+com/afse/academy/service/EmailService.class
+com/afse/academy/queue/EmailQueueServiceImpl.class
+com/afse/academy/service/EjbService.class
