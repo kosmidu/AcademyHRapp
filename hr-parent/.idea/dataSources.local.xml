@@ -2,13 +2,22 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="db@localhost" uuid="835cfd67-d1f3-47d8-8c86-66a754a27314">
-      <database-info product="PostgreSQL" version="9.6.9" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+      <database-info product="PostgreSQL" version="9.6.9" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)" family="POSTGRES" exact-version="9.6.9">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
       <introspection-schemas>db:public</introspection-schemas>
+    </data-source>
+    <data-source name="test@localhost" uuid="7c84f3b0-dd7c-4aad-9ee3-8079531ec5fd">
+      <database-info product="PostgreSQL" version="9.6.9" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)" family="POSTGRES" exact-version="9.6.9">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <introspection-schemas>test:public</introspection-schemas>
     </data-source>
   </component>
 </project>

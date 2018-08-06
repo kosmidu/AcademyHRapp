@@ -1,0 +1,35 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+    <changeSet id="employee-1.0.0" author="kosmima" failOnError="true" runAlways="false" runOnChange="true">
+        <comment>
+            Create table 'employee' to store employee's information
+        </comment>
+        <createTable tableName="employee" schemaName="public">
+            <column name="emp_id" type="bigint">
+                <constraints nullable="false" primaryKey="true" />
+            </column>
+            <column name="first_name" type="varchar(100)" />
+            <column name="last_name" type="varchar(100)" />
+            <column name="phone_number" type="varchar(20)" />
+            <column name="email" type="varchar(100)" />
+            <column name="salary" type="double" />
+            <column name="join_date" type="date" />
+            <column name="birth_date" type="date" />
+            <column name="city" type="varchar(20)" />
+            <column name="country" type="varchar(20)" />
+            <column name="street" type="varchar(20)" />
+            <column name="str_num" type="varchar(20)" />
+            <column name="zip_code" type="varchar(20)" />
+            <column name="dep_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint baseColumnNames="dep_id" baseTableName="employee"
+                                 baseTableSchemaName="public" constraintName="fk_dep_id"
+                                 referencedColumnNames="dep_id" referencedTableName="department"
+                                 referencedTableSchemaName="public" />
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,16 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+    <changeSet id="email-1.0.0" author="kosmima" failOnError="true" runAlways="false" runOnChange="true">
+        <comment>
+            Create table 'email' to store email's information, so as to implement JMS queues
+        </comment>
+        <createTable tableName="email" schemaName="public">
+            <column name="email_id" type="bigint">
+                <constraints nullable="false" primaryKey="true" />
+            </column>
+            <column name="email_msg" type="varchar(100)" />
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

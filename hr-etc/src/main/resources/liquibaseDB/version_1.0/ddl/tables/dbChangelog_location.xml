@@ -1,0 +1,28 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+    <changeSet id="location-1.0.0" author="kosmima" failOnError="true" runAlways="false" runOnChange="true">
+        <comment>
+            Create table 'location' to store location's information
+        </comment>
+        <createTable tableName="location" schemaName="public">
+            <column name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true" />
+            </column>
+            <column name="country_name" type="varchar(100)">
+                <constraints nullable="false" />
+            </column>
+            <column name="city_name" type="varchar(100)">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+        <addUniqueConstraint columnNames="country_name, city_name"
+                                 constraintName="const_name"
+                                 deferrable="true"
+                                 disabled="true"
+                                 initiallyDeferred="true"
+                                 schemaName="public"
+                                 tableName="location" />
+    </changeSet>
+</databaseChangeLog>

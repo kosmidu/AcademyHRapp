@@ -2,17 +2,20 @@ Manifest-Version: 1.0
 Built-By: maria
 Class-Path: hr-service-1.0-SNAPSHOT.jar lib/hr-persistence-1.0-SNAPSHO
  T.jar lib/javax-javaee-api-8.0.jar lib/com.sun.mail-javax.mail-1.6.0.
- jar lib/javax.activation-activation-1.1.jar lib/javax.validation-vali
- dation-api-2.0.1.Final.jar lib/org.hibernate-hibernate-entitymanager-
- 4.2.7.Final.jar lib/org.jboss.logging-jboss-logging-3.1.0.GA.jar lib/
- dom4j-dom4j-1.6.1.jar lib/org.javassist-javassist-3.18.1-GA.jar lib/o
- rg.jboss.spec.javax.transaction-jboss-transaction-api_1.1_spec-1.0.1.
- Final.jar lib/org.hibernate.javax.persistence-hibernate-jpa-2.0-api-1
- .0.1.Final.jar lib/org.hibernate.common-hibernate-commons-annotations
- -4.0.2.Final.jar lib/org.hibernate-hibernate-core-4.0.1.Final.jar lib
- /commons-collections-commons-collections-3.2.1.jar lib/antlr-antlr-2.
- 7.7.jar lib/com.afse-hr-common-1.0-SNAPSHOT.jar lib/log4j-log4j-1.2.1
- 7.jar
+ jar lib/javax.activation-activation-1.1.jar lib/org.jboss.resteasy-re
+ steasy-jackson-provider-3.0.10.Final.jar lib/org.codehaus.jackson-jac
+ kson-core-asl-1.9.12.jar lib/org.codehaus.jackson-jackson-mapper-asl-
+ 1.9.12.jar lib/org.codehaus.jackson-jackson-jaxrs-1.9.12.jar lib/org.
+ codehaus.jackson-jackson-xc-1.9.12.jar lib/javax.validation-validatio
+ n-api-2.0.1.Final.jar lib/org.hibernate-hibernate-entitymanager-4.2.7
+ .Final.jar lib/org.jboss.logging-jboss-logging-3.1.0.GA.jar lib/dom4j
+ -dom4j-1.6.1.jar lib/org.javassist-javassist-3.18.1-GA.jar lib/org.jb
+ oss.spec.javax.transaction-jboss-transaction-api_1.1_spec-1.0.1.Final
+ .jar lib/org.hibernate.javax.persistence-hibernate-jpa-2.0-api-1.0.1.
+ Final.jar lib/org.hibernate.common-hibernate-commons-annotations-4.0.
+ 2.Final.jar lib/org.hibernate-hibernate-core-4.0.1.Final.jar lib/comm
+ ons-collections-commons-collections-3.2.1.jar lib/antlr-antlr-2.7.7.j
+ ar lib/com.afse-hr-common-1.0-SNAPSHOT.jar lib/log4j-log4j-1.2.17.jar
 Created-By: Apache Maven 3.3.9
 Build-Jdk: 1.8.0_181
 

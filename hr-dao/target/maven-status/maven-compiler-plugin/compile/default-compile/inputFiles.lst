@@ -1,4 +1,8 @@
 /home/maria/IdeaProjects/academy_HRapp/hr-dao/src/main/java/com/afse/academy/EmailDao.java
-/home/maria/IdeaProjects/academy_HRapp/hr-dao/src/main/java/com/afse/academy/DaoImpl.java
-/home/maria/IdeaProjects/academy_HRapp/hr-dao/src/main/java/com/afse/academy/Dao.java
+/home/maria/IdeaProjects/academy_HRapp/hr-dao/src/main/java/com/afse/academy/LocationDao.java
 /home/maria/IdeaProjects/academy_HRapp/hr-dao/src/main/java/com/afse/academy/EmailDaoImpl.java
+/home/maria/IdeaProjects/academy_HRapp/hr-dao/src/main/java/com/afse/academy/LocationDaoImpl.java
+/home/maria/IdeaProjects/academy_HRapp/hr-dao/src/main/java/com/afse/academy/EmployeeDaoImpl.java
+/home/maria/IdeaProjects/academy_HRapp/hr-dao/src/main/java/com/afse/academy/DepartmentDao.java
+/home/maria/IdeaProjects/academy_HRapp/hr-dao/src/main/java/com/afse/academy/EmployeeDao.java
+/home/maria/IdeaProjects/academy_HRapp/hr-dao/src/main/java/com/afse/academy/DepartmentDaoImpl.java

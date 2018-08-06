@@ -1,0 +1,25 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+    <changeSet id="department-1.0.0" author="kosmima" failOnError="true" runAlways="false" runOnChange="true">
+
+        <comment>
+            Create table 'department' to store department's information
+        </comment>
+
+        <createTable tableName="department" schemaName="public">
+            <column name="dep_id" type="bigint">
+                <constraints nullable="false" primaryKey="true" />
+            </column>
+            <column name="name" type="varchar(20)" />
+            <column name="city" type="varchar(20)" />
+            <column name="country" type="varchar(20)" />
+            <column name="street" type="varchar(20)" />
+            <column name="str_num" type="varchar(20)" />
+            <column name="zip_code" type="varchar(20)" />
+        </createTable>
+
+    </changeSet>
+
+</databaseChangeLog>

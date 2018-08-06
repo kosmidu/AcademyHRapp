@@ -1,6 +1,5 @@
 package com.afse.academy.queue;
 
-import com.afse.academy.MyException;
 import org.apache.log4j.Logger;
 
 import javax.annotation.PostConstruct;
@@ -12,7 +11,6 @@ import java.io.Serializable;
 
 public abstract class AbstractQueueService<T extends Serializable> {
 
-    //private final static Logger logger = LoggerFactory.getLogger(AbstractQueueService.class);
     @Inject
     private Logger logger;
 
@@ -36,11 +34,13 @@ public abstract class AbstractQueueService<T extends Serializable> {
      * @return true if the message was sent successfully
      * @throws MyException
      */
-    public boolean send(T msg, int priority) throws MyException {
+    public boolean send(T msg, int priority) {
         Connection connection = null;
         Session session = null;
 
-        if (!isValid()) return false;
+        if (!isValid()) {
+            return false;
+        }
 
         try {
             connection = getConnectionFactory().createConnection();
@@ -50,12 +50,12 @@ public abstract class AbstractQueueService<T extends Serializable> {
             message.setJMSPriority(priority);
             session.createProducer(getQueue())
                     .send(message);
-            return true;
         } catch (Exception e) {
-            throw new MyException(e);
+            logger.error(e.getMessage());
         } finally {
             releaseConnection(connection, session);
         }
+        return true;
     }
 
     /**
@@ -81,16 +81,16 @@ public abstract class AbstractQueueService<T extends Serializable> {
      * @param connection
      * @param session
      */
-    private void releaseConnection(Connection connection, Session session) throws MyException {
+    private void releaseConnection(Connection connection, Session session) {
         try {
             if (session != null) session.close();
         } catch (JMSException e) {
-            throw new MyException(e);
+            logger.error(e.getMessage());
         }
         try {
             if (connection != null) connection.close();
         } catch (JMSException e) {
-            throw new MyException(e);
+            logger.error(e.getMessage());
         }
     }
 

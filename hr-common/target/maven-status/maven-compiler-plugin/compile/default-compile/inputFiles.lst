@@ -1,1 +1,4 @@
+/home/maria/IdeaProjects/academy_HRapp/hr-common/src/main/java/com/afse/academy/exception/MyException.java
+/home/maria/IdeaProjects/academy_HRapp/hr-common/src/main/java/com/afse/academy/exception/InvalidInputException.java
 /home/maria/IdeaProjects/academy_HRapp/hr-common/src/main/java/com/afse/academy/LoggerProducer.java
+/home/maria/IdeaProjects/academy_HRapp/hr-common/src/main/java/com/afse/academy/exception/ValidateException.java

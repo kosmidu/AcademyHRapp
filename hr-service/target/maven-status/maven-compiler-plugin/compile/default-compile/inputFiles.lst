@@ -1,7 +1,11 @@
 /home/maria/IdeaProjects/academy_HRapp/hr-service/src/main/java/com/afse/academy/queue/EmailQueueServiceImpl.java
-/home/maria/IdeaProjects/academy_HRapp/hr-service/src/main/java/com/afse/academy/MyException.java
+/home/maria/IdeaProjects/academy_HRapp/hr-service/src/main/java/com/afse/academy/service/DepartmentService.java
+/home/maria/IdeaProjects/academy_HRapp/hr-service/src/main/java/com/afse/academy/service/LocationValidationService.java
+/home/maria/IdeaProjects/academy_HRapp/hr-service/src/main/java/com/afse/academy/service/EmployeeService.java
+/home/maria/IdeaProjects/academy_HRapp/hr-service/src/main/java/com/afse/academy/service/TestMain.java
 /home/maria/IdeaProjects/academy_HRapp/hr-service/src/main/java/com/afse/academy/service/EmailService.java
 /home/maria/IdeaProjects/academy_HRapp/hr-service/src/main/java/com/afse/academy/queue/EmailQueueMessageDrivenBean.java
 /home/maria/IdeaProjects/academy_HRapp/hr-service/src/main/java/com/afse/academy/queue/AbstractQueueService.java
 /home/maria/IdeaProjects/academy_HRapp/hr-service/src/main/java/com/afse/academy/queue/EmailQueueService.java
-/home/maria/IdeaProjects/academy_HRapp/hr-service/src/main/java/com/afse/academy/service/EjbService.java
+/home/maria/IdeaProjects/academy_HRapp/hr-service/src/main/java/com/afse/academy/service/ValidationService.java
+/home/maria/IdeaProjects/academy_HRapp/hr-service/src/main/java/com/afse/academy/service/LocationService.java

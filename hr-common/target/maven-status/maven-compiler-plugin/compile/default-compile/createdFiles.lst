@@ -1,1 +1,4 @@
+com/afse/academy/exception/ValidateException.class
+com/afse/academy/exception/InvalidInputException.class
 com/afse/academy/LoggerProducer.class
+com/afse/academy/exception/MyException.class

@@ -1,2 +1,7 @@
-com/afse/academy/Email.class
+com/afse/academy/JsonDateSerializer.class
 com/afse/academy/Employee.class
+com/afse/academy/GenericResponse.class
+com/afse/academy/Address.class
+com/afse/academy/Department.class
+com/afse/academy/Email.class
+com/afse/academy/Location.class

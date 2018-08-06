@@ -1,0 +1,85 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+    <changeSet id="init-data-locations" author="kosmima" failOnError="true" runAlways="false" runOnChange="true">
+
+        <comment>
+            Initialize 'location' table
+        </comment>
+
+        <insert tableName="location">
+            <!--<column name="id" value="1" />-->
+            <column name="id" valueSequenceNext="LOCATION_SEQ"/>
+            <column name="country_name" value="USA" />
+            <column name="city_name" value="San Francisco" />
+        </insert>
+        <insert tableName="location">
+            <!--<column name="id" value="2" />-->
+            <column name="id" valueSequenceNext="LOCATION_SEQ"/>
+            <column name="country_name" value="USA" />
+            <column name="city_name" value="Denver" />
+        </insert>
+        <insert tableName="location">
+            <!--<column name="id" value="3" />-->
+            <column name="id" valueSequenceNext="LOCATION_SEQ"/>
+            <column name="country_name" value="USA" />
+            <column name="city_name" value="New York" />
+        </insert>
+        <insert tableName="location">
+            <!--<column name="id" value="4" />-->
+            <column name="id" valueSequenceNext="LOCATION_SEQ"/>
+            <column name="country_name" value="Greece" />
+            <column name="city_name" value="Volos" />
+        </insert>
+        <insert tableName="location">
+            <!--<column name="id" value="5" />-->
+            <column name="id" valueSequenceNext="LOCATION_SEQ"/>
+            <column name="country_name" value="Greece" />
+            <column name="city_name" value="Athens" />
+        </insert>
+        <insert tableName="location">
+            <!--<column name="id" value="6" />-->
+            <column name="id" valueSequenceNext="LOCATION_SEQ"/>
+            <column name="country_name" value="Greece" />
+            <column name="city_name" value="Drama" />
+        </insert>
+        <insert tableName="location">
+            <!--<column name="id" value="7" />-->
+            <column name="id" valueSequenceNext="LOCATION_SEQ"/>
+            <column name="country_name" value="Germany" />
+            <column name="city_name" value="Berlin" />
+        </insert>
+        <insert tableName="location">
+            <!--<column name="id" value="8" />-->
+            <column name="id" valueSequenceNext="LOCATION_SEQ"/>
+            <column name="country_name" value="Germany" />
+            <column name="city_name" value="Munich" />
+        </insert>
+        <insert tableName="location">
+            <!--<column name="id" value="9" />-->
+            <column name="id" valueSequenceNext="LOCATION_SEQ"/>
+            <column name="country_name" value="Germany" />
+            <column name="city_name" value="Frankfurt" />
+        </insert>
+        <insert tableName="location">
+            <!--<column name="id" value="10" />-->
+            <column name="id" valueSequenceNext="LOCATION_SEQ"/>
+            <column name="country_name" value="Brazil" />
+            <column name="city_name" value="Sao Paolo" />
+        </insert>
+        <insert tableName="location">
+            <!--<column name="id" value="11" />-->
+            <column name="id" valueSequenceNext="LOCATION_SEQ"/>
+            <column name="country_name" value="Brazil" />
+            <column name="city_name" value="Rio de Janeiro" />
+        </insert>
+        <insert tableName="location">
+            <!--<column name="id" value="12" />-->
+            <column name="id" valueSequenceNext="LOCATION_SEQ"/>
+            <column name="country_name" value="Brazil" />
+            <column name="city_name" value="Salvador" />
+        </insert>
+    </changeSet>
+</databaseChangeLog>

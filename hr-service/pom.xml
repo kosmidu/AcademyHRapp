@@ -37,14 +37,10 @@
             <version>${project.parent.version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
         <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>4.3.2.Final</version>
+            <groupId>com.afse</groupId>
+            <artifactId>hr-common</artifactId>
+            <version>${project.parent.version}</version>
         </dependency>
-
-
-
     </dependencies>
 </project>

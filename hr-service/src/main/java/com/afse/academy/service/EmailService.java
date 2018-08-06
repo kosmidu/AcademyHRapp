@@ -1,8 +1,6 @@
 package com.afse.academy.service;
 
 import com.afse.academy.Email;
-import com.afse.academy.EmailDao;
-import com.afse.academy.Employee;
 import com.afse.academy.queue.EmailQueueService;
 
 import javax.ejb.EJB;
