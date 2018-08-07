@@ -1,7 +1,7 @@
 package com.afse.academy.service;
 
-import com.afse.academy.entities.Employee;
 import com.afse.academy.EmployeeDao;
+import com.afse.academy.entities.Employee;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -16,20 +16,15 @@ public class EmployeeService {
     @EJB
     EmailService emailService;
 
-    //@TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
     public Employee updateEmployee(Employee e) { return employeeDao.update(e); }
 
-   //@TransactionAttribute(TransactionAttributeType.REQUIRED)
-    public Employee findEmployee(Long id) {
-        return employeeDao.find(id);
-    }
+    public Employee findEmployee(Long id) { return employeeDao.find(id); }
 
     public String deleteEmployee(Long id) { return employeeDao.delete(id); }
 
-    //@TransactionAttribute(TransactionAttributeType.REQUIRED)
     public Employee createEmployee(Employee e) {
         Employee emp = employeeDao.create(e);
-        emailService.sendRegistrationEmail(findEmployee(emp.getId()).toString());
+        emailService.sendRegistrationEmail(emp);
         return emp;
     }
 
