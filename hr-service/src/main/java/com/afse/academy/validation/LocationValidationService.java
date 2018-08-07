@@ -11,7 +11,7 @@ public class LocationValidationService {
     private LocationDao locationDao;
 
     /**
-     *
+     * This is a validation service for the location
      * @param country
      * @param city
      * @return true if the combination country-city is valid, else false

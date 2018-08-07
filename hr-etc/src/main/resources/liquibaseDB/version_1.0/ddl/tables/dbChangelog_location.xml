@@ -6,17 +6,19 @@
         <comment>
             Create table 'location' to store location's information
         </comment>
+
         <createTable tableName="location" schemaName="public">
             <column name="id" type="bigint">
                 <constraints nullable="false" primaryKey="true" />
             </column>
-            <column name="country_name" type="varchar(100)">
+            <column name="country_name" type="varchar(20)">
                 <constraints nullable="false" />
             </column>
-            <column name="city_name" type="varchar(100)">
+            <column name="city_name" type="varchar(20)">
                 <constraints nullable="false" />
             </column>
         </createTable>
+
         <addUniqueConstraint columnNames="country_name, city_name"
                                  constraintName="const_name"
                                  deferrable="true"

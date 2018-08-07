@@ -1,5 +1,7 @@
 package com.afse.academy;
 
+import com.afse.academy.entities.Employee;
+
 import java.util.List;
 
 public interface EmployeeDao {

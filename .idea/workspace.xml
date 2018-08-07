@@ -1,18 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed22bbba-bac0-499f-9223-f8d21c598566" name="Default" comment="" />
+    <list default="true" id="ed22bbba-bac0-499f-9223-f8d21c598566" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/hr-etc/src/main/resources/liquibase.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-common/target/hr-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/hr-common/target/hr-common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hr-common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-dao/src/main/java/com/afse/academy/DepartmentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-dao/src/main/java/com/afse/academy/DepartmentDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-dao/src/main/java/com/afse/academy/EmailDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-dao/src/main/java/com/afse/academy/EmailDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-dao/src/main/java/com/afse/academy/EmployeeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-dao/src/main/java/com/afse/academy/EmployeeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-dao/src/main/java/com/afse/academy/LocationDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-dao/src/main/java/com/afse/academy/LocationDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-dao/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr-dao/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-dao/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr-dao/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-dao/target/classes/com/afse/academy/DepartmentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-dao/target/classes/com/afse/academy/DepartmentDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-dao/target/classes/com/afse/academy/EmailDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-dao/target/classes/com/afse/academy/EmailDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-dao/target/classes/com/afse/academy/EmployeeDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-dao/target/classes/com/afse/academy/EmployeeDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-dao/target/classes/com/afse/academy/LocationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-dao/target/classes/com/afse/academy/LocationDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-dao/target/classes/com/afse/academy/LocationDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-dao/target/classes/com/afse/academy/LocationDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-dao/target/hr-dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/hr-dao/target/hr-dao-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/hr-ear-1.0-SNAPSHOT.ear" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/hr-ear-1.0-SNAPSHOT.ear" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/hr-ear-1.0-SNAPSHOT/com.afse-hr-rest-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/hr-ear-1.0-SNAPSHOT/com.afse-hr-rest-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/hr-ear-1.0-SNAPSHOT/hr-dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/hr-ear-1.0-SNAPSHOT/hr-dao-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/hr-ear-1.0-SNAPSHOT/hr-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/hr-ear-1.0-SNAPSHOT/hr-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/hr-ear-1.0-SNAPSHOT/lib/com.afse-hr-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/hr-ear-1.0-SNAPSHOT/lib/com.afse-hr-common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/hr-ear-1.0-SNAPSHOT/lib/hr-persistence-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/hr-ear-1.0-SNAPSHOT/lib/hr-persistence-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/com.afse-hr-rest-1.0-SNAPSHOT.war/WEB-INF/classes/com/afse/academy/boundary/DepartmentBoundary.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/temp/com.afse-hr-rest-1.0-SNAPSHOT.war/WEB-INF/classes/com/afse/academy/boundary/DepartmentBoundary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/com.afse-hr-rest-1.0-SNAPSHOT.war/WEB-INF/classes/com/afse/academy/boundary/EmployeeBoundary.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/temp/com.afse-hr-rest-1.0-SNAPSHOT.war/WEB-INF/classes/com/afse/academy/boundary/EmployeeBoundary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/com.afse-hr-rest-1.0-SNAPSHOT.war/WEB-INF/classes/com/afse/academy/filter/CorsFeauture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/com.afse-hr-rest-1.0-SNAPSHOT.war/WEB-INF/classes/com/afse/academy/resource/DepartmentResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/temp/com.afse-hr-rest-1.0-SNAPSHOT.war/WEB-INF/classes/com/afse/academy/resource/DepartmentResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/com.afse-hr-rest-1.0-SNAPSHOT.war/WEB-INF/classes/com/afse/academy/resource/EmployeeResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/temp/com.afse-hr-rest-1.0-SNAPSHOT.war/WEB-INF/classes/com/afse/academy/resource/EmployeeResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/com.afse-hr-rest-1.0-SNAPSHOT.war/WEB-INF/classes/com/afse/academy/resource/LocationResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/temp/com.afse-hr-rest-1.0-SNAPSHOT.war/WEB-INF/classes/com/afse/academy/resource/LocationResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/hr-dao-1.0-SNAPSHOT.jar/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/temp/hr-dao-1.0-SNAPSHOT.jar/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/hr-dao-1.0-SNAPSHOT.jar/com/afse/academy/DepartmentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/temp/hr-dao-1.0-SNAPSHOT.jar/com/afse/academy/DepartmentDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/hr-dao-1.0-SNAPSHOT.jar/com/afse/academy/EmailDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/temp/hr-dao-1.0-SNAPSHOT.jar/com/afse/academy/EmailDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/hr-dao-1.0-SNAPSHOT.jar/com/afse/academy/EmployeeDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/temp/hr-dao-1.0-SNAPSHOT.jar/com/afse/academy/EmployeeDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/hr-dao-1.0-SNAPSHOT.jar/com/afse/academy/LocationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/temp/hr-dao-1.0-SNAPSHOT.jar/com/afse/academy/LocationDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/hr-dao-1.0-SNAPSHOT.jar/com/afse/academy/LocationDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/temp/hr-dao-1.0-SNAPSHOT.jar/com/afse/academy/LocationDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/hr-service-1.0-SNAPSHOT.jar/com/afse/academy/service/DepartmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/temp/hr-service-1.0-SNAPSHOT.jar/com/afse/academy/service/DepartmentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/hr-service-1.0-SNAPSHOT.jar/com/afse/academy/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/temp/hr-service-1.0-SNAPSHOT.jar/com/afse/academy/service/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/hr-service-1.0-SNAPSHOT.jar/com/afse/academy/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-ear/target/temp/hr-service-1.0-SNAPSHOT.jar/com/afse/academy/service/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/hr-service-1.0-SNAPSHOT.jar/com/afse/academy/service/LocationValidationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/hr-service-1.0-SNAPSHOT.jar/com/afse/academy/service/TestMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-ear/target/temp/hr-service-1.0-SNAPSHOT.jar/com/afse/academy/service/ValidationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-etc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr-etc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-etc/src/main/resources/liquibaseDB/version_1.0/ddl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr-etc/src/main/resources/liquibaseDB/version_1.0/ddl.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-etc/src/main/resources/liquibaseDB/version_1.0/ddl/create_sequences.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr-etc/src/main/resources/liquibaseDB/version_1.0/ddl/create_sequences.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-etc/src/main/resources/liquibaseDB/version_1.0/ddl/sequences/test_db_createSEQ.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr-etc/src/main/resources/liquibaseDB/version_1.0/ddl/sequences/dbChangelog_sequence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-parent/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr-parent/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-parent/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr-parent/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-parent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr-parent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-persistence/src/main/java/com/afse/academy/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-persistence/src/main/java/com/afse/academy/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-persistence/target/classes/com/afse/academy/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-persistence/target/classes/com/afse/academy/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-persistence/target/hr-persistence-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/hr-persistence/target/hr-persistence-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-persistence/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hr-persistence/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/src/main/java/com/afse/academy/boundary/DepartmentBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/src/main/java/com/afse/academy/boundary/DepartmentBoundary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/src/main/java/com/afse/academy/boundary/EmployeeBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/src/main/java/com/afse/academy/boundary/EmployeeBoundary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/src/main/java/com/afse/academy/filter/CorsFeauture.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/src/main/java/com/afse/academy/filter/CORSFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/src/main/java/com/afse/academy/filter/NoCacheFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/src/main/java/com/afse/academy/filter/NoCacheFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/src/main/java/com/afse/academy/resource/DepartmentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/src/main/java/com/afse/academy/resource/DepartmentResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/src/main/java/com/afse/academy/resource/EmployeeResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/src/main/java/com/afse/academy/resource/EmployeeResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/src/main/java/com/afse/academy/resource/LocationResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/src/main/java/com/afse/academy/resource/LocationResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/classes/com/afse/academy/boundary/DepartmentBoundary.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/target/classes/com/afse/academy/boundary/DepartmentBoundary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/classes/com/afse/academy/boundary/EmployeeBoundary.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/target/classes/com/afse/academy/boundary/EmployeeBoundary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/classes/com/afse/academy/filter/CorsFeauture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/classes/com/afse/academy/resource/DepartmentResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/target/classes/com/afse/academy/resource/DepartmentResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/classes/com/afse/academy/resource/EmployeeResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/target/classes/com/afse/academy/resource/EmployeeResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/classes/com/afse/academy/resource/LocationResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/target/classes/com/afse/academy/resource/LocationResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/hr-rest-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/target/hr-rest-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/hr-rest-1.0-SNAPSHOT/WEB-INF/classes/com/afse/academy/boundary/DepartmentBoundary.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/target/hr-rest-1.0-SNAPSHOT/WEB-INF/classes/com/afse/academy/boundary/DepartmentBoundary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/hr-rest-1.0-SNAPSHOT/WEB-INF/classes/com/afse/academy/boundary/EmployeeBoundary.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/target/hr-rest-1.0-SNAPSHOT/WEB-INF/classes/com/afse/academy/boundary/EmployeeBoundary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/hr-rest-1.0-SNAPSHOT/WEB-INF/classes/com/afse/academy/filter/CorsFeauture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/hr-rest-1.0-SNAPSHOT/WEB-INF/classes/com/afse/academy/resource/DepartmentResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/target/hr-rest-1.0-SNAPSHOT/WEB-INF/classes/com/afse/academy/resource/DepartmentResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/hr-rest-1.0-SNAPSHOT/WEB-INF/classes/com/afse/academy/resource/EmployeeResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/target/hr-rest-1.0-SNAPSHOT/WEB-INF/classes/com/afse/academy/resource/EmployeeResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/hr-rest-1.0-SNAPSHOT/WEB-INF/classes/com/afse/academy/resource/LocationResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/target/hr-rest-1.0-SNAPSHOT/WEB-INF/classes/com/afse/academy/resource/LocationResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/hr-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-service/src/main/java/com/afse/academy/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-service/src/main/java/com/afse/academy/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-service/src/main/java/com/afse/academy/validation/ValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr-service/src/main/java/com/afse/academy/validation/ValidationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-service/target/classes/com/afse/academy/service/DepartmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-service/target/classes/com/afse/academy/service/DepartmentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-service/target/classes/com/afse/academy/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-service/target/classes/com/afse/academy/service/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-service/target/classes/com/afse/academy/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/hr-service/target/classes/com/afse/academy/service/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-service/target/classes/com/afse/academy/service/LocationValidationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-service/target/classes/com/afse/academy/service/TestMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-service/target/classes/com/afse/academy/service/ValidationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-service/target/hr-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/hr-service/target/hr-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/hr-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/hr-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="28132775">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -20,29 +119,28 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
     <option name="width" value="927" />
     <option name="height" value="1055" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -61,44 +159,23 @@
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -112,43 +189,44 @@
       <option name="presentableId" value="Default" />
       <updated>1532514324886</updated>
       <workItem from="1532514329225" duration="74000" />
+      <workItem from="1533580798487" duration="116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74000" />
+    <option name="totallyTimeSpent" value="190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
-      <window_info anchor="right" id="Database" />
-      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Learn" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,9 +236,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
   </component>
   <component name="masterDetails">
     <states>

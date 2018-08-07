@@ -1,6 +1,6 @@
 package com.afse.academy.queue;
 
-import com.afse.academy.Email;
+import com.afse.academy.entities.Email;
 import com.afse.academy.EmailDao;
 import org.apache.log4j.Logger;
 

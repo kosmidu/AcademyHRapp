@@ -9,17 +9,22 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
+/**
+ * This is an exception mapper for the hr-application. It catches all the exceptions of the hibernate validation
+ * and all the invalid input exceptions.
+ */
 @Provider
-public class HRAppExceptionMapper implements ExceptionMapper <Exception>{
+public class HRAppExceptionMapper implements ExceptionMapper<Exception> {
+
     @Override
     public Response toResponse(Exception e) {
 
-        if(e instanceof InvalidInputException) {
-            return Response.status(Response.Status.BAD_REQUEST).entity("FAILURE").build();
+        if (e instanceof InvalidInputException) {
+            return Response.status(Response.Status.BAD_REQUEST).entity(e.getMessage()).build();
         }
 
         if (e instanceof EJBException) {
-            if(e.getCause() instanceof ConstraintViolationException) {
+            if (e.getCause() instanceof ConstraintViolationException) {
                 return Response.status(Response.Status.BAD_REQUEST)
                         .entity(prepareMessage((ConstraintViolationException) e.getCause()))
                         .type("text/plain")

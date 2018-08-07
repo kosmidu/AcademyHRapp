@@ -27,12 +27,6 @@
 
         <dependency>
             <groupId>com.afse</groupId>
-            <artifactId>hr-persistence</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.afse</groupId>
             <artifactId>hr-dao</artifactId>
             <version>${project.parent.version}</version>
         </dependency>

@@ -1,7 +1,8 @@
 package com.afse.academy;
 
+import com.afse.academy.entities.Department;
+
 import java.util.List;
-import java.util.Map;
 
 public interface DepartmentDao {
     Department create(Department d);

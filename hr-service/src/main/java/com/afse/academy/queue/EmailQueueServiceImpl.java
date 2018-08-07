@@ -1,6 +1,6 @@
 package com.afse.academy.queue;
 
-import com.afse.academy.Email;
+import com.afse.academy.entities.Email;
 
 import javax.ejb.Stateless;
 import javax.jms.ConnectionFactory;

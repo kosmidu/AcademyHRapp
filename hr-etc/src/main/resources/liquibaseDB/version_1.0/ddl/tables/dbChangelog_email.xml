@@ -6,11 +6,13 @@
         <comment>
             Create table 'email' to store email's information, so as to implement JMS queues
         </comment>
+
         <createTable tableName="email" schemaName="public">
             <column name="email_id" type="bigint">
                 <constraints nullable="false" primaryKey="true" />
             </column>
             <column name="email_msg" type="varchar(100)" />
         </createTable>
+
     </changeSet>
 </databaseChangeLog>

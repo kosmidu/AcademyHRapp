@@ -18,12 +18,6 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>com.afse</groupId>
-            <artifactId>hr-common</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -31,13 +25,13 @@
             <plugin>
                 <groupId>org.liquibase</groupId>
                 <artifactId>liquibase-maven-plugin</artifactId>
-                <!--TODO put all the configuration info to a property file-->
                 <configuration>
-                    <changeLogFile>src/main/resources/liquibaseDB/master.xml</changeLogFile>
-                    <driver>org.postgresql.Driver</driver>
-                    <url>jdbc:postgresql://127.0.0.1:5432/test</url>
-                    <username>postgres</username>
-                    <password>postgres</password>
+                    <propertyFile>src/main/resources/liquibase.properties</propertyFile>
+                    <changeLogFile>${changeLogFile}</changeLogFile>
+                    <driver>${driver}</driver>
+                    <url>${url}</url>
+                    <username>${username}</username>
+                    <password>${password}</password>
                 </configuration>
                 <executions>
                     <execution>

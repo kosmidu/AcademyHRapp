@@ -1,11 +1,10 @@
+com/afse/academy/validation/LocationValidationService.class
+com/afse/academy/validation/ValidationService.class
 com/afse/academy/service/EmployeeService.class
 com/afse/academy/service/DepartmentService.class
 com/afse/academy/service/LocationService.class
-com/afse/academy/service/TestMain.class
 com/afse/academy/queue/EmailQueueMessageDrivenBean.class
 com/afse/academy/queue/EmailQueueService.class
-com/afse/academy/service/ValidationService.class
 com/afse/academy/queue/AbstractQueueService.class
 com/afse/academy/service/EmailService.class
-com/afse/academy/service/LocationValidationService.class
 com/afse/academy/queue/EmailQueueServiceImpl.class

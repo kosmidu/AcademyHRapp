@@ -1,46 +1,62 @@
 package com.afse.academy;
 
-public class GenericResponse {
+import javax.ws.rs.core.Response;
+import java.io.Serializable;
+import java.util.List;
 
-	private boolean status;
-	private String message;
-	private String errorCode;
-	private Employee employee;
+/**
+ *
+ * This is a Generic class for formatting the response of all the requests.
+ * @param <T> Serializable
+ */
+public class GenericResponse<T extends Serializable> {
 
-	public boolean isStatus() {
-		return status;
-	}
+    private boolean result;
+    private String message;
+    private Response.Status status;
+    private T t;
+    private List<T> list;
 
-	public void setStatus(boolean status) {
-		this.status = status;
-	}
+    public boolean isResult() {
+        return result;
+    }
 
-	public String getMessage() {
-		return message;
-	}
+    public void setResult(boolean result) {
+        this.result = result;
+    }
 
-	public void setMessage(String message) {
-		this.message = message;
-	}
+    public String getMessage() {
+        return message;
+    }
 
-	public String getErrorCode() {
-		return errorCode;
-	}
+    public void setMessage(String message) {
+        this.message = message;
+    }
 
-	public void setErrorCode(String errorCode) {
-		this.errorCode = errorCode;
-	}
+    public Response.Status getStatus() { return status; }
 
-	public Employee getEmployee() {
-		return employee;
-	}
+    public void setStatus(Response.Status status) {
+        this.status = status;
+    }
 
-	public void setEmployee(Employee employee) {
-		this.employee = employee;
-	}
+    public T get() {
+        return t;
+    }
 
-	@Override
-	public String toString() {
-		return status + "|" + message + "|" + errorCode + employee;
-	}
+    public void set(T t) {
+        this.t = t;
+    }
+
+    public List<T> getList() {
+        return list;
+    }
+
+    public void setList(List<T> list){
+        this.list = list;
+    }
+
+    @Override
+    public String toString() {
+        return ((result + " | " + message + " | " + status + " | " + t).toUpperCase());
+    }
 }

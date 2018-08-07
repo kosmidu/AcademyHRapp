@@ -1,7 +1,8 @@
 /home/maria/IdeaProjects/academy_HRapp/hr-persistence/src/main/java/com/afse/academy/JsonDateSerializer.java
-/home/maria/IdeaProjects/academy_HRapp/hr-persistence/src/main/java/com/afse/academy/Location.java
-/home/maria/IdeaProjects/academy_HRapp/hr-persistence/src/main/java/com/afse/academy/Department.java
+/home/maria/IdeaProjects/academy_HRapp/hr-persistence/src/main/java/com/afse/academy/entities/Department.java
+/home/maria/IdeaProjects/academy_HRapp/hr-persistence/src/main/java/com/afse/academy/entities/Email.java
 /home/maria/IdeaProjects/academy_HRapp/hr-persistence/src/main/java/com/afse/academy/GenericResponse.java
-/home/maria/IdeaProjects/academy_HRapp/hr-persistence/src/main/java/com/afse/academy/Email.java
-/home/maria/IdeaProjects/academy_HRapp/hr-persistence/src/main/java/com/afse/academy/Address.java
-/home/maria/IdeaProjects/academy_HRapp/hr-persistence/src/main/java/com/afse/academy/Employee.java
+/home/maria/IdeaProjects/academy_HRapp/hr-persistence/src/main/java/com/afse/academy/entities/Location.java
+/home/maria/IdeaProjects/academy_HRapp/hr-persistence/src/main/java/com/afse/academy/entities/Employee.java
+/home/maria/IdeaProjects/academy_HRapp/hr-persistence/src/main/java/com/afse/academy/RandomDateOfBirth.java
+/home/maria/IdeaProjects/academy_HRapp/hr-persistence/src/main/java/com/afse/academy/entities/Address.java

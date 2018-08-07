@@ -32,5 +32,10 @@
             <version>${project.parent.version}</version>
             <type>jar</type>
         </dependency>
+        <dependency>
+            <groupId>com.afse</groupId>
+            <artifactId>hr-common</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
     </dependencies>
 </project>

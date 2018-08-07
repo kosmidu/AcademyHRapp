@@ -1,7 +1,5 @@
 package com.afse.academy.resource;
-import com.afse.academy.Location;
 import com.afse.academy.boundary.LocationBoundary;
-import com.afse.academy.service.LocationService;
 import org.apache.log4j.Logger;
 
 import javax.annotation.PostConstruct;

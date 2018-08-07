@@ -1,6 +1,6 @@
 package com.afse.academy.service;
 
-import com.afse.academy.Email;
+import com.afse.academy.entities.Email;
 import com.afse.academy.queue.EmailQueueService;
 
 import javax.ejb.EJB;
@@ -16,8 +16,6 @@ public class EmailService {
     @TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)
     public void sendRegistrationEmail(String emp){
         Email email = new Email();
-        /*String message = "First name:" + emp.getFirstName() +
-                "\nLast name:" + emp.getLastName();*/
         email.setEmail(emp);
         emailQueue.send(email);
     }

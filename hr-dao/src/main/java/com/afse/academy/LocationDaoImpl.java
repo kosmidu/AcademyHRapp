@@ -11,10 +11,11 @@ import java.util.List;
 @Stateless
 public class LocationDaoImpl implements LocationDao {
 
-    @PersistenceContext(unitName = "test")
+    @PersistenceContext(unitName = "hrApp")
     private EntityManager em;
 
-    @TransactionAttribute(TransactionAttributeType.REQUIRED)
+    @Override
+    @TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
     public List<String> getCountries(){
         Query query = em.createQuery( "Select DISTINCT(l.countryName) " + "from Location l "+ "ORDER BY l.countryName ASC");
         List list = query.getResultList();
@@ -22,7 +23,8 @@ public class LocationDaoImpl implements LocationDao {
         return list;
     }
 
-    @TransactionAttribute(TransactionAttributeType.REQUIRED)
+    @Override
+    @TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
     public List<String> getCities(String country) {
         Query query = em.createQuery( "Select l.cityName " + "from Location l " + "where l.countryName = :country " + "ORDER BY l.cityName ASC");
         query.setParameter("country", country);

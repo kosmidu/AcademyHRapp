@@ -1,0 +1,32 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+    <changeSet id="init-data-product-types" author="kosmima" failOnError="true" runAlways="false" runOnChange="true">
+
+        <comment>
+            Initialize 'department' table
+        </comment>
+
+        <insert tableName="department">
+            <column name="dep_id" value="30" />
+            <column name="name" value="Software Engineer" />
+            <column name="city" value="Volos" />
+            <column name="country" value="Greece" />
+            <column name="street" value="Ritsou" />
+            <column name="str_num" value="27" />
+            <column name="zip_code" value="38888" />
+        </insert>
+        <insert tableName="department">
+            <column name="dep_id" value="33" />
+            <column name="name" value="System Architect" />
+            <column name="city" value="Volos" />
+            <column name="country" value="Greece" />
+            <column name="street" value="Ritsou" />
+            <column name="str_num" value="27" />
+            <column name="zip_code" value="38888" />
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

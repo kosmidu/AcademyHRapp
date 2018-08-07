@@ -1,5 +1,7 @@
 package com.afse.academy;
 
+import com.afse.academy.entities.Employee;
+
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
@@ -11,73 +13,60 @@ import java.util.List;
 @Stateless
 public class EmployeeDaoImpl implements EmployeeDao {
 
-//    Create EntityManager
-    @PersistenceContext(unitName = "test")
+    @PersistenceContext(unitName = "hrApp")
     private EntityManager em;
 
     @Override
     @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public Employee create(Employee e) {
-        if (e != null) {
-            em.persist(e);
-            em.flush();
-            return e;
-        }
-        return null;
+        em.persist(e);
+        em.flush();
+
+        return e;
     }
 
-    @TransactionAttribute(TransactionAttributeType.REQUIRED)
+    @Override
+    @TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
     public Employee find(Long id) {
         Employee e = em.find(Employee.class, id);
-        if (e != null) {
-            return e;
-        }
-        return null;
+
+        return e;
     }
 
+    @Override
     @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public Employee update(Employee e) {
-        Employee emp = em.find(Employee.class, e.getId());
-        if (emp != null) {
-            Employee employee = em.merge(e);
-            return employee;
-        }
-        return null;
+        em.find(Employee.class, e.getId());
+        Employee employee = em.merge(e);
+
+        return employee;
     }
 
+    @Override
     @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public String delete(Long id) {
         Employee e = em.find(Employee.class, id);
-        if (e != null) {
-            em.remove(e);
-            return "Success delete";
-        }
-        return "No Success delete";
+        em.remove(e);
+
+        return null;
     }
 
-    @TransactionAttribute(TransactionAttributeType.REQUIRED)
+    @Override
+    @TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
     public List<Employee> getAll() {
         Query query = em.createQuery("Select e " + "from Employee e " + "ORDER BY e.lastName ASC");
+        List<Employee> list = query.getResultList();
 
-        List<Employee> list = (List<Employee>) query.getResultList();
-       /* Map<Long, Employee> map = new HashMap<>();
-
-        for (Employee e : list) {
-            map.put(e.getId(), e);
-        }*/
         return list;
     }
 
-    @TransactionAttribute(TransactionAttributeType.REQUIRED)
+    @Override
+    @TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
     public List<Employee> getAllByDepId(Long id) {
         Query query = em.createQuery("Select e " + "from Employee e " + "where e.department.id = :id " + "ORDER BY e.lastName ASC");
         query.setParameter("id", id);
-        List<Employee> list = (List<Employee>) query.getResultList();
-        /*Map<Long, Employee> map = new HashMap<>();
+        List<Employee> list = query.getResultList();
 
-        for (Employee e : list) {
-            map.put(e.getId(), e);
-        }*/
         return list;
     }
 }

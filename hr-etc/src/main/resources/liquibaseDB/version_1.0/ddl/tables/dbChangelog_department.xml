@@ -3,7 +3,6 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
 
     <changeSet id="department-1.0.0" author="kosmima" failOnError="true" runAlways="false" runOnChange="true">
-
         <comment>
             Create table 'department' to store department's information
         </comment>
@@ -21,5 +20,4 @@
         </createTable>
 
     </changeSet>
-
 </databaseChangeLog>

@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * This is a json date serializer for the correct format of an input date.
+ */
 public class JsonDateSerializer extends JsonSerializer<Date> {
 
     public JsonDateSerializer() {}

@@ -64,7 +64,6 @@
                         <webModule>
                             <groupId>com.afse</groupId>
                             <artifactId>hr-rest</artifactId>
-                            <!--<uri>hr-rest-1.0-SNAPSHOT.war</uri>-->
                             <contextRoot>/hr</contextRoot>
                         </webModule>
                         <ejbModule>
